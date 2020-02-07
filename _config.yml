@@ -1,0 +1,259 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+locale: "en-US" # localize your site's language; you might use `en`, `en-US`, or `en-GB`, or for other countries, consult this chart: https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee825488(v=cs.20)  
+title: "Distance Learning, a GitHub Pages Theme" # Give your website a title  
+title_separator: "—"
+subtitle: "Built from Minimal Mistakes and AcademicPages" # Give your website a subtitle if you'd like  
+name: "FirstName LastName, MLS"
+email: # option  
+description: >- # that `>-` will make Jekyll ignore newlines until the "baseurl:" key
+  Write an awesome description for your new site here. It won't be visible on the 
+  site, it's designed to appear in your website's head meta section (for Google 
+  search results) and in your feed.xml site description.You can edit this 
+  line in _config.yml.
+# url: 
+# url:  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: ""
+repository: 
+# repository: "your-github-user-name/your-github-user-name.github.io" # put in your own repository here, which is almost certainly yourusername/yourusername.github.io  
+lifespan: 2019-2020 # this is for the copyright info  
+teaser:  
+logo:  
+masthead_title: 
+og_image: /assets/images/
+breadcrumbs: true  
+words_per_minute: 160  
+comments:  
+  provider: false # "utterances"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+twitter_username: username
+github_username: username
+minimal_mistakes_skin: neon # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum" "sunrise"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search: true
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+kramdown:
+  auto_ids: true
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones; e.g. America/Boise
+
+include:
+  - _articles
+  - _books
+  - _pages
+  - _papers
+  - _posts
+  - _talks
+  - _teaching
+  - _theses
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+exclude:  
+  - templates
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# the below lines control what goes in the author sidebar (default is the left-hand side of the screen on desktop and below the header image on mobile)  
+# the "icon" lines use icons from either font awesome or academicons; if you want to add more profile links and their associated icons, follow this basic pattern and look at font awesome or academicons for the appropriate code  
+# the "url" lines will use what you have added for twitter and github further up in this config file for those sites; for the others you should cut & paste your profile's url for whatever you add 
+
+author:
+  name   : "FirstName LastName"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Your awesome biography constrained to a sentence or two goes here."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+    - label: "Orcid"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/"
+    - label: "H-Commons"
+      icon: "fas fa-university"
+      url: "https://hcommons.org/members/"
+# I doubt most people want to link to their instagram on their academic profile page, so I'm commenting these lines out. If you want to use this, just delete the `#` character for each line and your settings will be applied to your site  
+#    - label: "Instagram" 
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+# I doubt most people want to link to their instagram on their academic profile page, so I'm commenting these lines out. If you want to use this, just delete the `#` character for each line and your settings will be applied to your site  
+#    - label: "Instagram" 
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
+  papers:  
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  theses:
+    output: true
+    permalink: /:collection/:path/
+
+# for each new collection you want to add to your cv, copy the below template. You'd also need to add a new markdown file that ends in `.md` under the `_pages` folder. adapting `publications.md` or `talks.md` are probably your best best  
+# newCollectionName:
+#   output: true
+#   permalink: /:collection/:path/
+  
+defaults:
+  # _articles
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _books
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _papers
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: # true
+      share: false
+      related: true
+      toc: true
+      toc_label: "In This Post"
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _theses
+  - scope:
+      path: ""
+      type: theses
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # if you want to add a new collection, use the following pattern  
+  # _newCollectionName
+  #   - scope:
+  #      path: ""
+  #      type: theses
+  #    values:
+  #      layout: single
+  #      author_profile: true
+  #      share: true

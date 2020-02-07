@@ -1,0 +1,17 @@
+# things to do  
+
+- [x] try changing code to instead of using collections for different types of publications, have them all in publications and use categories to include them in the cv & etc  
+  - [ ] add link in readme explaining why the above doesn't work due to jekyll's structure  
+
+- [ ] figure out why theme isn't being applied to article post linked from cv  
+
+- [ ] fully adapt html includes for books, articles, theses, etc.  
+- [ ] look at any conflicts between AcademicPages and Minimal Mistakes  
+- [x] test Minimal Mistakes remote themes  
+- [ ] add Academicons  
+- [ ] redo the default author profile social facets to make them more academic  
+- [ ] share with Ben & Jay  
+- [ ] figure out if default should include Reveal.js stuff (almost certainly not; those who want to use it can probably add it themselves)  
+  - [ ] figure out how reveal slide urls will interact with jekyll-created pages; if someone adds reveal.js, will it make both pages that end in / and the slides that end in .html?  
+- [ ] figure out how to explain to users how to customize the different templates for their preferred citation style; I will not write, merge, or maintain the thousands of styles that exist in the CSL repositories; I *might* make MLA and APA variants in the template(s), in part to give people examples of how the files work together  
+

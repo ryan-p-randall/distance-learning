@@ -1,0 +1,15 @@
+---
+title: "Thesis Title Goes Here"
+collection: theses
+permalink: /theses/2020-01-01-thesis-title # change the date, in YYYY-MM-DD format, then put whatever title you'd like using "kebab case", i.e. all lowercase words connected by a single `-` character rather than separated by a space
+excerpt: 'Excerpt Put whatever you'd like as a brief description here. It will show up in your CV.'
+venue: 'The institution where you wrote this thesis'
+paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+citation: 'Your Name, You. (2009). &quot;Thesis Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+published: true # false (change this to false if you want to use this as a draft but not be shown on your site yet; it will still be saved and editable in GitHub, so people looking directly at your repositories can see it)
+---
+Body This thesis is about the poems relating to the number 1. Poems relating to the number 2 are left for future work.
+
+[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+
+Recommended citation: Your Name, You. (2009). "Thesis Title Number 1." <i>Journal 1</i>. 1(1).
